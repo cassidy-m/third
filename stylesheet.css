@@ -1,4 +1,15 @@
+.body {
+	font-family: Arial;
+	font-size: 16px;
+
+}
+
+.btn_section {
+	position: relative;
+}
+
 .btn {
+	position: static;
 	outline: none;
 	background-color: #fafafa;
 	border: 1px solid #cccccc;
@@ -7,10 +18,44 @@
 	font-size: 14px;
 	padding: .6em .8em .6em .8em; /*comment*/
 	text-decoration: none;
-	font-family: Arial;
 	cursor: pointer;
 	display: inline-block;
 
+}
+
+.btn_icon {
+	font-size: 9px;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown:hover .dropdown-list {
+	display: block;
+
+}
+
+.dropdown-list {
+	display: none;
+	position: absolute;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 5px 10px;
+	top: 100%;
+	min-width: 160px;
+
+}
+
+.btn_position_relative {
+	position: relative;
+	
+}
+
+.btn_position_absolute {
+	position: absolute;
+	top: 0;
 }
 
 .btn:active {
@@ -42,4 +87,46 @@
 	background-color: #3a79b0;
 	border-color: #326796;
 	color: #fff;
+}
+
+.parent {
+
+}
+
+.child {
+	border: 1px solid #ccc;
+	display: inline-block;
+}
+
+.parent-float {
+
+}
+
+.child-float {
+	border: 1px solid #ccc;
+	display: block;
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	border: 1px solid red;
+	clear: both;
+}
+
+.parent-table {
+	display: table;
+
+}
+
+.child-table {
+	border: 2px solid #000;
+	display: table-cell;
+	width: 50px;
+	vertical-align: middle;
 }

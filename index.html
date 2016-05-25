@@ -5,11 +5,11 @@
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
-<body>
+<body class="body">
 	<header>
 		<h1>Визуальные компоненты</h1>
 	</header>
-	<article>
+	<article class="btn_section">
 		<header>
 			<h2>Кнопки</h2>
 		</header>
@@ -19,6 +19,47 @@
 			<button class="btn btn_state_danger">Delete</button>
 			<a href="#" class="btn">Standard</a>
 			<div class="btn">Standard1</div>
+		</section>
+	</article>
+	<article class="btn_section">
+		<header>
+			<h2>Dropdowns</h2>
+		</header>
+		<section>
+			<div class="dropdown">
+			<button class="btn btn_position_relative">Стандартная <span class="btn_icon">&#9660;</span></button>
+			<div class="dropdown-list">Здесь будет список</div>
+			</div>
+
+			</div>
+		</section>
+	</article>
+	<article class="btn_section">
+		<header>
+			<h2>Выравнивание элементов</h2>
+		</header>
+		<section>
+		<h3>выравнивание с помощью inline-block</h3>
+			<div class="parent">
+				<div class="child">first</div>
+				<div class="child">second</div>
+				<div class="child">third</div>
+				<div class="child">fourth</div>
+			</div>
+			<h3>выравнивание с помощью float</h3>
+			<div class="parent-float clearfix">
+				<div class="child-float">first</div>
+				<div class="child-float">second</div>
+				<div class="child-float">third</div>
+				<div class="child-float">fourth</div>
+			</div>
+			<h3>выравнивание с помощью display: table</h3>
+			<div class="parent-table">
+				<div class="child-table">first</div>
+				<div class="child-table">second</div>
+				<div class="child-table">third</div>
+				<div class="child-table">fourth</div>
+			</div>
 		</section>
 	</article>
 
